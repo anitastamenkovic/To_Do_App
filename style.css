@@ -1,0 +1,159 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+/* Basic Style */
+
+body {
+  background: #fff;
+  color: #333;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  width: 430px;
+  margin: 10px auto 0;
+}
+
+.section {
+  margin: 20px 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li * {
+  float: left;
+}
+
+li,
+h3 {
+  clear: both;
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button {
+  border: 1px solid #888;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  width: 60px;
+  padding: 10px 5px;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin: 0;
+  padding: 5px;
+}
+
+h3,
+label[for="new-task"] {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+}
+
+input[type="text"] {
+  margin: 0;
+  padding: 10px;
+  line-height: 18px;
+  height: 18px;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  border: 1px solid #adadad;
+  border-radius: 6px;
+  background: #f3f3f3;
+  color: #888;
+}
+
+input[type="text"]:focus {
+  color: #333;
+}
+
+/* New Task */
+label[for="new-task"] {
+  display: block;
+  margin: 0 0 20px;
+}
+
+input#new-task {
+  float: left;
+  width: 318px;
+}
+
+p > button:hover {
+  color: #0476f8;
+}
+
+/* Task list */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #888;
+}
+
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+
+li > label {
+  /* font-size: 18px; */
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+
+li > input[type="text"] {
+  width: 226px;
+}
+
+li > .edit:hover {
+  color: #0fc57c;
+}
+
+li > .delete:hover {
+  color: #cf2323;
+}
+
+/* Completed */
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+ul li input[type="text"] {
+  display: none;
+}
+
+ul li.editMode input[type="text"] {
+  display: block;
+}
+
+ul li.editMode label {
+  display: none;
+}
